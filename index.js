@@ -13,11 +13,12 @@ function updateTime() {
 
 
 
-    display.innerText=`${hour} : ${minutes} : ${seconds}`
+    display.innerText = `${hour} : ${minutes} : ${seconds}`
 }
+console.log("Hello world")
 
 function formatTime(time) {
-    if ( time < 10 ) {
+    if (time < 10) {
         return '0' + time;
     }
     return time;
@@ -28,7 +29,7 @@ function setAlarmTime(value) {
 }
 
 function setAlarm() {
-    if(alarmTime) {
+    if (alarmTime) {
         const current = new Date();
         const timeToAlarm = new Date(alarmTime);
 
