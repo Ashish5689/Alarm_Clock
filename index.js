@@ -46,6 +46,8 @@ function clearAlarm() {
         clearTimeout(alarmTimeout);
         alert('Alarm cleared');
     }
+
+    console.log("hello boisss")
 }
 
 setInterval(updateTime, 1000);
